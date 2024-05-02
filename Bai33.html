@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm có  bao nhiêu phần tử chia 5 dư 2 trong mảng</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let dem = 0;
+    let soLuong = +prompt("Nhập vào số lượng phần tử của mảng: ");
+    for (let i = 0; i < soLuong; i++) {
+        let a = +prompt("Nhập phần tử thứ " + (i + 1));
+        array.push(a);
+        if (array[i] % 5 === 2) {
+            dem += 1;
+        }
+
+    }
+    document.write("<h1>" + "Array [" + array + "]" + "</h1>" + "<br>");
+    document.write("Số lượng phần tử chia cho 5 dư 2 trong mảng là: " + dem)
+</script>
+</body>
+</html>

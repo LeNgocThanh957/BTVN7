@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra các số từ a đến b số chẵn trong h2, so le trong h1</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào a: ");
+    let b = +prompt("Nhập vào b: ");
+    for (let i = a; i <= b; i++) {
+        if (i % 2 === 0) {
+            document.write("<h1>"+"Chẵn: "+ + i + "</h1>" + "<br>");
+        }else
+            document.write("<h2>"+"Lẻ: "+ + i + "</h2>" + "<br>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Tổng các phần tử.</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let tong = 0;
+    let soLuong = +prompt("Nhập vào số lượng phần tử của mảng: ");
+    for (let i = 0; i < soLuong; i++) {
+        let a = +prompt("Nhập phần tử thứ " + (i + 1));
+        array.push(a);
+        tong += a;
+    }
+    document.write("<h1>" + "Array [" + array + "]" + "</h1>" + "<br>");
+    document.write("Tổng các phần tử: "+ tong)
+</script>
+</body>
+</html>

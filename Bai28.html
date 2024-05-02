@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tích các phần tử chẵn</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let tich = 1;
+    let soLuong = +prompt("Nhập vào số lượng phần tử của mảng: ");
+    for (let i = 0; i < soLuong; i++) {
+        let a = +prompt("Nhập phần tử thứ " + (i + 1));
+        array.push(a);
+        if (a % 2 === 0) {
+            tich *= a;
+        }
+    }
+    document.write("<h1>" + "Array [" + array + "]" + "</h1>" + "<br>");
+    document.write("Tích các phần tử chẵn: "+ tich)
+</script>
+</body>
+</html>

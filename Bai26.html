@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra các phần số chẵn trong h2, le trong h1;</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let array2 = [];
+    let array3 = [];
+    let soLuong = +prompt("Nhập vào số lượng phần tử của mảng: ");
+    for (let i = 0; i < soLuong; i++) {
+        let a = +prompt("Nhập phần tử thứ " + (i + 1));
+        array.push(a);
+        if (a % 2 === 0) {
+            array2.push(a);
+        } else array3.push(a);
+    }
+    document.write("<h1>" + "Array [" + array + "]" + "</h1>" + "<br>");
+    document.write("<h1>Danh sách các phần tử chẵn trong mảng: " + array2 + "</h1>" + "<br>");
+    document.write("<h2>Danh sách các phần tử lẻ trong mảng: " + array3 + "</h2>" );
+
+</script>
+</body>
+</html>
